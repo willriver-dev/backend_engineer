@@ -1,2 +1,5 @@
-# backend_engineer
-Learning to become a better backend developer :v
+# **TECH NOTE**
+
+```
+The road that made me a better software engineer.
+```
