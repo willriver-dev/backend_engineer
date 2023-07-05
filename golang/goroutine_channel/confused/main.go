@@ -43,7 +43,7 @@ func fanOut(in <-chan int, name string) <-chan int {
 	out := make(chan int)
 	go func() {
 		for v := range in {
-			fmt.Printf("Push square of %d to channel %s \n", v*v, name)
+			fmt.Printf("Push square of %d to goroutine_channel %s \n", v*v, name)
 			out <- v * v
 
 		}
