@@ -37,7 +37,7 @@ func process(in <-chan int, name string) {
 	count := 0
 	go func() {
 		for v := range in {
-			fmt.Printf("Push square of %d to channel %s \n", v*v, name)
+			fmt.Printf("Push square of %d to goroutine_channel %s \n", v*v, name)
 			count++
 
 		}
